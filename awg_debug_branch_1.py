@@ -46,7 +46,14 @@ class AWGDebugClass():
         spcm_dwSetParam_i32(self._hCard, SPC_M2CMD, M2CMD_CARD_RESET)
 
         # read type, function and sn and check for A/D card
+<<<<<<< HEAD
         some different and incompatible change
+=======
+        lCardTysdpe = int32(0)
+        something else
+        lSerialNumber = int32(0)
+        spcm_dwGetParam_i32(hCard, SPC_PCISERIALNO, byref(lSerialNumber))
+>>>>>>> branch_1
         lFncType = int32(0)
         spcm_dwGetParam_i32(hCard, SPC_FNCTYPE, byref(lFncType))
 
